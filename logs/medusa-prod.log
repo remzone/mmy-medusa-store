@@ -1,0 +1,19 @@
+nohup: ignoring input
+
+> my-medusa-store@0.0.1 start
+> medusa start
+
+[32minfo[39m:    Skipping instrumentation registration. No register function found.
+redisUrl not found. A fake redis instance will be used.
+[33mwarn[39m:    Local Event Bus installed. This is not recommended for production.
+[32minfo[39m:    Locking module: Using "in-memory" as default.
+[32minfo[39m:    No job to load from /home/bami/www/my-medusa-store/node_modules/@medusajs/medusa/dist/jobs. skipped.
+[31merror[39m:   Error starting server
+[31merror[39m:   Could not find index.html in the admin build directory. Make sure to run 'medusa build' before starting the server.
+Error: Could not find index.html in the admin build directory. Make sure to run 'medusa build' before starting the server.
+    at serve (/home/bami/www/my-medusa-store/node_modules/@medusajs/admin-bundler/dist/index.js:1541:11)
+    at serveProductionBuild (/home/bami/www/my-medusa-store/node_modules/@medusajs/medusa/src/loaders/admin.ts:87:28)
+    at async loadEntrypoints (/home/bami/www/my-medusa-store/node_modules/@medusajs/medusa/src/loaders/index.ts:111:3)
+    at async exports.default (/home/bami/www/my-medusa-store/node_modules/@medusajs/medusa/src/loaders/index.ts:175:31)
+    at async internalStart (/home/bami/www/my-medusa-store/node_modules/@medusajs/medusa/src/commands/start.ts:169:59)
+    at async start (/home/bami/www/my-medusa-store/node_modules/@medusajs/medusa/src/commands/start.ts:290:5)
