@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: "@medusajs/pricing",
       options: {
-        strategy: "./src/strategies/custom-price-selection-strategy",
+        strategy: "./src/services/custom-price-selection-strategy",
       },
     },
   ],
