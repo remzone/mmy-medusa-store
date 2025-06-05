@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "@odysseycons/price-rules": {
+      "signature": "e7d1313c02d88bc415c7f02e8a323d71",
+      "file": true
+    }
+  }
+}

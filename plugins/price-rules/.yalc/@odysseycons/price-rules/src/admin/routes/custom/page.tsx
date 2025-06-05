@@ -187,7 +187,7 @@ const CustomPage = () => {
 }
 
 export const config = defineRouteConfig({
-  label: "Odyssey DPRS",
+  label: "Odyssey DPR",
   icon: Tag,
 })
 

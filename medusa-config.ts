@@ -1,9 +1,7 @@
-import { loadEnv, defineConfig } from '@medusajs/framework/utils'
+import { loadEnv } from "@medusajs/framework/utils";
+import { defineConfig } from "@medusajs/framework/utils";
 
-import { PriceRule } from './src/modules/price-rules/models/price-rule'
-import { Price } from '@medusajs/medusa'
-
-loadEnv(process.env.NODE_ENV || 'development', process.cwd())
+loadEnv(process.env.NODE_ENV || "development", process.cwd());
 
 export default defineConfig({
   projectConfig: {
@@ -15,26 +13,12 @@ export default defineConfig({
       jwtSecret: process.env.JWT_SECRET || "supersecret",
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     },
-
-    entities: [
-      PriceRule,
-      Price,
-    ],
   },
 
-plugins: [
-  {
-    resolve: "./src/api/admin/price-rules",
-    options: {},
-  },
-  {
-    resolve: "@medusajs/pricing",
-    options: {
-      strategy: "./src/services/custom-price-selection-strategy",
+  plugins: [
+    {
+      resolve: "@odysseycons/price-rules",
+      options: {},
     },
-  },
-],
-
-
-})
-
+  ],
+});
